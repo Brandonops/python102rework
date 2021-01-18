@@ -1,4 +1,3 @@
-  
 input1 = int(input("Enter number 1: "))
 input2 = int(input("Enter number 2: "))
 input3 = int(input("Enter number 3: "))
@@ -14,9 +13,10 @@ list1 = [input1, input2, input3, input4, input5, input6, input7, input8, input9,
 
 print("Your list is: ")
 print(list1)
-print("Your list of even numbers is: ")
+print("Your list of positive numbers is: ")
 even_list = []
 for i in list1:
-    if i % 2 == 0:
+    if i >= 0:
         even_list.append(i)
+even_list.sort()
 print(even_list)
